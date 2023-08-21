@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangalore Tourism</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        
+
+       
+
+    .nav{
+        height:80px;
+        width:100%;
+        background-color: #ffebcd;
+        position: fixed;
+        top: 0;
+        z-index: 50;
+        
+        
+
+    }
+    nav a{
+        /* padding: 80px 0px 0px 100px; */
+        /* margin-left: 70px; */
+        /* margin-top: 20px;  */
+        padding-top: 100px;
+        padding-left: 100px;
+        font-size: 30px;
+        text-decoration: none;
+    }
+    .home{
+        height: 100vh;
+        width:100%
+
+    }
+    .home h1{
+font-family: 'Indie Flower', cursive;
+font-size: 70px;
+color: rgb(201, 15, 15);
+text-align: center;
+transform: translate(0px ,200px);
+
+    }
+    .home{
+        height:100vh;
+        width:100%;  
+    }
+    .home img{
+        height:100vh;
+        width:100%;
+        margin-top: -100px;
+    }
+    .park{
+        height: 150vh;
+        width:100%;
+        background-color: darkgray;
+        padding-top:90px;
+        
+
+    }
+    .park h1{
+        color:maroon;
+        /* background-color: hotpink; */
+        /* text-align: center; */
+    }
+    marquee{
+        background-color: blue;
+        
+    }
+    .free_entry{
+        height: 100vh;
+        width:100%;
+
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        flex-wrap: wrap;
+    }
+    .free_entry img{
+        height: 200px;
+        width: 260px;
+        margin-left: 50px;
+
+    }
+    .free_entry p {
+margin-left: 50px;
+    }
+    .free_entry img:hover{
+       /* background-image : liner-gradient(url("info1.png")); */
+       transform: scale(1.1);
+    } 
+    .free_entry a{
+        color: #ffebcd;
+        text-decoration: none;
+
+    }
+    .monument{
+        height: 150vh;
+        width: 100%;
+        background-color: navajowhite;
+        padding-top:90px;
+         
+    }
+    .monuments{
+        height: 100vh;
+        width: 100%;
+        
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-items: center;
+
+    }
+    .monuments img{
+        height: 200px;
+        width: 260px;
+        
+    }
+     
+
+     .monuments h1{
+        color:lavenderblush;
+    }
+    .monuments marquee{
+        background-color: darkmagenta;
+    }
+    .monuments img{
+        height: 200px;
+        width: 260px;
+        margin-left: 60px;
+    }
+     .monuments p {
+margin-left: 60px;
+
+
+     }  
+     .monuments a{
+        text-decoration: none;
+        color: teal;
+     }
+     .monuments img:hover{
+        transform: scale(1.2);
+        /* transform: rotate(360deg); */
+    
+        /* transition: all 2s ease; */
+        /* animation: flip all 3s ease ; */
+     }
+     /* @keyframes flip {
+        from{
+            transform:rotate(0deg)
+        }
+        to{
+           transform: rotate(360deg);
+        }
+     } */
+     .water{
+        height: 120vh;
+        width: 100%;
+        padding-top:90px;
+        background-color: lightsteelblue;
+        /* background-image: image("fall.gif"); */
+     }
+     /* .water img{
+        height: 100vh;
+        width: 100%; */
+     
+     .water marquee{
+        background-color: tomato;
+        /* margin-top: 20px; */
+     }
+     .water h1{
+        color:darkblue
+     }
+     .waterfall{
+        height: 100vh;
+        width: 100%;
+        
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-items: center;
+
+    }
+    .waterfall img{
+        height: 200px;
+        width: 260px;
+        margin-left: 60px;
+        
+    }
+    .waterfall p{
+        margin-left:60px;
+    }
+    .waterfall a{
+        text-decoration: none;
+    }
+    .waterfall img:hover{
+        transform: scale(1.2);
+    }
+    .mall{
+        height:120vh;
+        width:100%;
+        padding-top:90px;
+        background-color: darkgrey;
+    }
+    .mall h1{
+        color:greenyellow
+    }
+    .mall marquee{
+        background-color: chocolate;
+    }
+    .malls{
+height: 100vh;
+        width: 100%;
+        
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-items: center;
+    }
+    .malls img{
+       height: 200px;
+        width: 260px;
+        margin-left: 60px; 
+    }
+    .malls a{
+        text-decoration: none;
+        color: crimson;
+    }
+    .malls p{
+        margin-left: 60px;
+    }
+    .malls img:hover{
+        transform: scale(1.2);
+        /* transform: rotate(360deg); */
+    
+        /* transition: all 2s ease; */
+        /* animation: flip all 3s ease ; */
+     }
+    .temple{
+        height: 120vh;
+        width: 100%;
+        padding-top:90px;
+        background-color: lightseagreen;
+        /* background-image: image("fall.gif"); */
+     }
+     /* .water img{
+        height: 100vh;
+        width: 100%; */
+     
+     .temple marquee{
+        background-color:orange;
+        /* margin-top: 20px; */
+     }
+     .temple h1{
+        color:darkblue
+     }
+     .temples{
+        height: 100vh;
+        width: 100%;
+        
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-items: center;
+
+
+     }
+    
+    .temples img{
+       height: 200px;
+        width: 260px;
+        margin-left: 60px; 
+    }
+    .temples a{
+        text-decoration: none;
+        color: crimson;
+    }
+    .temples p{
+        margin-left: 60px;
+    }
+    .temples img:hover{
+        transform: scale(1.2);
+        /* transform: rotate(360deg); */
+    
+        /* transition: all 2s ease; */
+        /* animation: flip all 3s ease ; */
+     }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <a href="#home1">Home</a>
+            <a href="#park1">Parks</a>
+            <a href="#monument1">monuments</a>
+            <a href="#water1">Waterfalls</a>
+            <a href="#mall2">Malls</a>
+            <a href="#temple1">More</a>
+
+
+
+        </nav>
+    </div>
+    <div  id ="home1"class="home">
+        <h1>WELCOME TO BANAGALORE TOURISM</h1>
+        <img src="bangalore.jpg" alt="">
+        <!-- <img src="home1.jpg" alt=""> -->
+    </div> 
+
+    <div  id = "park1"class="park">
+        <marquee behavior="alternate" direction="right"><h1> PARKS</h1></marquee>
+        <div class="free_entry">
+            <div class="park1"><a href="info1.png"><img src="park1.jpg" alt="">
+            <p> 1. CUBBON PARK </p></a></div>
+            <div class="park2"><a href="Screenshot (17).png"><img src="park2.1.jpg" alt=""> <p>2.LAL BAGH BOTANICAL GARDEN </p></a></div>
+            <div class="park3"><a href="Screenshot (18).png"><img src="park3.jpg" alt=""> <p>3. WONDERLA AMUSEMENT PARK</p></a></div>
+            <div class="park4"><a href="Screenshot (20).png"><img src="park4.jpg" alt=""> <p> 4. J.P PARK </p></div></a> <br> <br>
+            <div class="park5"><a href="Screenshot (19).png"><img src="park5.jpg" alt=""><p>5. BUTTERFLY PARK</p></a></div>
+            <div class="park6"><a href="Screenshot (21).png"><img src="park6.jpg" alt=""><P>6.INDIRA GANDHI MUSICAL PARK</P></a></div>
+            <div class="park7"><a href="Screenshot (16).png"><img src="park7.jpg" alt=""> <p>7.BANNERGHATTA BIOLOGICAL</p></a></div>
+            <div class="park8"><a href="Screenshot (22).png"><img src="park8.jpg" alt=""> <p>8.RANADHEERA KANTEERAVA</p></a></div>
+            
+        </div>
+    </div>
+    <div  id ="monument1"class="monument">
+        <marquee behavior="" direction=""><h1>MONUMENTS</h1></marquee>
+        <div class="monuments">
+        
+        <div class="fort"><a href="Screenshot (25).png"><img src="fort1.jpg" alt=""><p>1.BANAGALORE FORT</p> </div>    </a>
+        <div class="fort"><a href="Screenshot (26).png"><img src="fort2.jpg" alt=""><p>2.TIPU SULTAN'S PLACE</p></div></a>
+        <div class="fort"><a href="Screenshot (27).png"><img src="fort3.jpg" alt=""><p>3.BANAGALORE PLACE</p></div></a>
+        <div class="fort"><a href="Screenshot (28).png"><img src="fort4.jpg" alt=""><p>4.VIDHANA SOUDHA</p></div></a>
+        <div><br><br></div>     
+   
+        <div class="fort"><a href="Screenshot (32).png"><img src="fort5.jpg" alt=""><p>5.MAYO MALL</p></div></a>
+        <div class="fort"><a href="Screenshot (31).png"><img src="fort6.jpg" alt=""><p>6.ATTARA KACHERI</p></div></a>
+        <div class="fort"><a href="Screenshot (30).png"><img src="fort7.jpg" alt=""><p>7.SESHADRI AYYO HALL</p></div></a>
+        <div class="fort"><a href="Screenshot (29).png"><img src="fort8.jpg" alt=""><p>8.GOVERNMENT MUSEUM</p></div></a>
+    </div>
+
+    </div>
+    <div id="water1" class="water">
+        
+        <!-- <img src="fall.gif" alt=""> -->
+        <marquee behavior="" direction=""><h1>WATERFALLS</h1></marquee> 
+        <div class="waterfall">
+         <div class="fall"><a href="Screenshot (34).png"><img src="fall1.jpg" alt=""><p>1.THOTTIKALLU FALLS </p></a></div>
+         <div class="fall"><a href="Screenshot (35).png"><img src="fall2.jpg" alt=""><p>2.MUTHAYALA MADUVU FALLS </p></a></div>
+         <div class="fall"><a href="Screenshot (36).png"><img src="fall3.jpg" alt=""><p>3.CHUNCHI FALLS </p></a></div>
+         <div class="fall"><a href="Screenshot (37).png"><img src="fall4.jpg" alt=""><p>4.MEKEDATU FALLS </p></a></div> <br><br>
+         &nbsp;
+         <div class="fall"><a href="Screenshot (38).png"><img src="fall5.jpg" alt=""><p>5.HOGENAKKAL FALLS </p></a></div> 
+         <div class="fall"><a href="Screenshot (39).png"><img src="fall6.jpg" alt=""><p>6.SHIVANA SAMUDRA FALLS </p></a></div>
+         <div class="fall"><a href="Screenshot (40).png"><img src="fall7.jpg" alt=""><p>7.KAIGAL FALLS </p></a></div>
+         <div class="fall"><a href="Screenshot (41).png"><img src="fall8.jpg" alt=""><p>8. FALLS </p></a></div><br><br>
+         <div class="fall"><a href="Screenshot (42).png"><img src="fall9.jpg" alt=""><p>9.IRUPPU FALLS </p></a></div>
+         <div class="fall"><a href="f1.png"><img src="fall10.jpg" alt=""><p>10.JOG FALLS </p></a></div>
+
+         <div class="fall"><a href="f2.png"><img src="fall11.jpg" alt=""><p>11.MALLALLI FALLS </p></a></div>
+         <div class="fall"><a href="f3.png"><img src="fall12.jpg" alt=""><p>12.CHELEVARA FALLS </p></a></div>
+         
+
+
+        </div>
+    </div>
+    <div  id ="mall2"class="mall">
+        <marquee behavior="" direction=""><h1>MALLS</h1></marquee>
+        <div class="malls">
+            <div class="mall1"><a href="m1.png"><img src="mall1.jpg" alt=""><p>1.PHOENIX MALL</p></a></div>
+            <div class="mall1"><a href="m2.png"><img src="mall2.jpg" alt=""><p>2.MANTRI SQUARE MALL</p></a></div>
+            <div class="mall1"><a href="m3.png"><img src="mall3.jpg" alt=""><p>3.UB CITY MALL</p></a></div>
+            <div class="mall1"><a href="m4.png"><img src="mall4.jpg" alt=""><p>4.ORION MALL</p></a></div>
+            <div class="mall1"><a href="m6.png"><img src="mall5.jpg" alt=""><p>5.GARUDA MALL</p></a></div>
+            <div class="mall1"><a href="m5.png"><img src="mall6.jpg" alt=""><p>6.FORUM MALL</p></a></div>
+            <div class="mall1"><a href="m9.png"><img src="mall7.jpg" alt=""><p>7.ROYAL MEENAKSHI MALL</p></a></div>
+            <div class="mall1"><a href="m8.png"><img src="mall8.webp" alt=""><p>8.LULU MALL</p></a></div>
+
+        </div>
+    </div>
+    <div  id="temple1"class="temple">
+        <marquee behavior="" direction=""><h1>TEMPLES</h1></marquee>
+        <div class="temples">
+            <div class="temp"><a href="Screenshot (50).png"><img src="temple1.jpg" alt=""><p>1.ISKON TEMPLE</p></a></div>
+            <div class="temp"><a href="Screenshot (51).png"><img src="temple2.webp" alt=""><p>2.SIVOHAM SIVA TEMPLE</p></a></div>
+            <div class="temp"><a href="Screenshot (52).png"><img src="temple3.webp" alt=""><p>3.BANSANKARI AMMA TEMPLE</p></a></div>
+            <div class="temp"><a href="Screenshot (53).png"><img src="temple4.webp" alt=""><p>4.JAGANNATH TEMPLE</p></a></div>
+        </div>
+    </div>
+
+</body>
+</html>
